@@ -1,0 +1,40 @@
+/**通用类**/
+ul li{list-style: none;}
+/**内容部分**/
+section#main{margin: 0 auto;padding-top:4.2em;padding-bottom: 1em;width:78.125%;height: auto;background-color: #ffe;overflow: hidden;}
+/**内容左侧**/
+section.left{margin:3em 0 5em 4em;padding:2em 5em 2em 0;width:65.8%;display: inline-block;border-right:1px solid #999;}/*4*/
+section.left ul li{margin:2em 0 5em 0;}
+section.left .curtitle{margin-left: 1em;display:inline-block;font-size: 1.88em;color: #444;}
+section.left .smlab{margin-left: 3em;margin-top:0.9em;display: inline-block;transform:rotate(-40deg);}
+section.left .curlabcon{margin-left: .5em;color: #999;}
+section.left .curdate{margin-left: 3em;color:#999;}
+section.left .curcon{color:#444;line-height: 2em;letter-spacing:.015em;}
+section.left .curcon span{margin:.3em 0 .3em 0; display: block;}
+section.left hr{margin:.5em 0 1.2em 0;}
+/**内容右侧**/
+section.right {position: fixed;top:10em;right:10%;width:16%;displ}
+section.right span{position:relative;top:-.75em;padding-bottom: .3em;padding-left: .5em;width: 50%;display: inline-block;border-bottom:1px solid #ccc;font-size:1.1em;color: #555;text-align: center;letter-spacing: 1.5em;}
+section.right ul{margin-top:1em;padding:.5em;}
+section.right img{max-width: 100%;height: auto;}
+section.right ul li {padding: .3em 2em .3em 2em;width: auto;display: inline-block;background-color: #e95e5e;font-size: .8em;color:#fff;letter-spacing:.05em;cursor: pointer;}
+section.left  ul li a,section.left ul li a:link,section.left ul li a:visited,section.left ul li a:active{color: #3385ff;text-decoration: none;}
+section.left  ul li a:hover{color:black;}
+footer{margin: 0 auto;padding-bottom: .8em;width: 78.125%;display: block;background-color:#ffe;text-align: center;color:#666;}/*4*/
+footer:hover{color:#444;cursor: pointer;}
+/**媒体自适应模块**/
+@media screen and (max-width: 1280px){
+	section#main{padding-top:3em;width:100%;}
+	section.right{right:.2em;}
+	footer{width: 100%;}
+}
+@media screen and (max-width:1000px){
+	section.left{margin:0 auto;padding-left:1em;width:90%;border:none;}
+	section.left ul li {margin: none;}
+	section#main{width:100%;}
+	section.left .smlab,
+	section.left .curlabcon,
+	section.left .curdate{margin-left: 1em;}
+	section.right{display: none;}
+	footer {width: 100%;}
+}

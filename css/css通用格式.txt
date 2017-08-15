@@ -1,0 +1,6 @@
+一、在哪里 position margin padding
+二、大小 width、height
+三、怎么显示 display overflow
+四、背景样式
+五、字体样式、大小、颜色
+六、其它
